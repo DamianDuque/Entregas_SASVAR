@@ -57,8 +57,8 @@ while True:
         leido2, frame2 = cap2.read()
         if (leido == True) and (leido2 == True):
 
-            cv2.imwrite(ruta + "/" + "foto1.png" , frame)
-            cv2.imwrite(ruta + "/" + "foto2.png" , frame2)
+            cv2.imwrite(os.path.join(ruta, "foto1.png") , frame)
+            cv2.imwrite(os.path.join(ruta, "foto2.png") , frame2)
 
             print("Fotos tomadas correctamente")
 
