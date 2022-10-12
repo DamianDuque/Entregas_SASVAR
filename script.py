@@ -15,9 +15,9 @@ if eCarpeta == False:
 ruta = os.path.abspath(nombre_carpeta)
 
 print("Cargando camaras y diccionarios...")
-with open (os.path.join(ruta, "InfoEtiqueta"), 'r') as f:
+with open (os.path.join(ruta, "InfoEtiqueta.json"), 'r') as f:
     diccionarioEtiq = json.load(f)
-with open (os.path.join(ruta, "InfoReferencias"), 'r') as f:
+with open (os.path.join(ruta, "InfoReferencias.json"), 'r') as f:
     diccionarioRef = json.load(f)
 
 #Inicializar etiqueta
