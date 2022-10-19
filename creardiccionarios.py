@@ -18,7 +18,7 @@ Etiq = {
     "tapaBotella": {"0": True, "1": False},
     "Suciedad": {"0":"Clean", "1": "Small", "2": "Medium", "3":"High"},
     "Dano": {"0":"Mixed", "1":"Damaged", "2":"Undamaged"},
-    "Marca": {"0":"Coca-Cola", "1":"Bavaria", "2":"Postobon", "3":"Colanta", "4":"Alpina", "5":"Pepsi", "6":"Nacional de chocolates", "7":"Detodito", "8":"Doritos", "9":"Gatorade", "a":"Cheesetris", "b":"Manimoto", "c":"Margarita", "d":"Tosh", "e":"Other"},
+    "Marca": {"0":"Coca-Cola", "1":"Bavaria", "2":"Postobon", "3":"Colanta", "4":"Alpina", "5":"Pepsi", "6":"Nacional de chocolates", "7":"Santin Noel", "8":"Detodito", "9":"Doritos", "a":"Gatorade", "b":"Cheesetris", "c":"Manimoto", "d":"Margarita", "e":"Tosh", "f": "Other"},
 }
 
 
@@ -31,6 +31,7 @@ referencias = {
     "Alpina": {"0": "Bonyurt", "1": "Other"},
     "Pepsi": {"0": "Other"},
     "Nacional de chocolates": {"0": "Chocolatina Jet", "1": "Other"},
+    "Santin Noel": {"0": "Original", "1": "Other"},
     "Detodito": {"0": "Other"},
     "Doritos": {"0": "Other"},
     "Gatorade": {"0": "Other"},
@@ -38,7 +39,7 @@ referencias = {
     "Manimoto": {"0": "Other"},
     "Margarita": {"0": "Other"},
     "Tosh": {"0": "Other"},
-    "Other":{"0": "Other"},
+    "Other":{"0": "Other"}
 }
 
 with open (os.path.join(ruta, "InfoEtiqueta.json"), "w") as dicEtiq:
