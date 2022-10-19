@@ -1,1 +1,72 @@
-{"Coca-Cola": {"0": "Zero", "1": "Original", "2": "Other"}, "Bavaria": {"0": "Pony Malta", "1": "Other"}, "Postobon": {"0": "Manzana", "1": "Other"}, "Colanta": {"0": "Yogurt", "1": "Other"}, "Alpina": {"0": "Bonyurt", "1": "Other"}, "Pepsi": {"0": "Other"}, "Nacional de chocolates": {"0": "Chocolatina Jet", "1": "Other"}, "Santin Noel": {"0": "Original", "1": "Other"}, "Detodito": {"0": "Other"}, "Doritos": {"0": "Other"}, "Gatorade": {"0": "Other"}, "Cheesetris": {"0": "Other"}, "Manimoto": {"0": "Other"}, "Margarita": {"0": "Other"}, "Tosh": {"0": "Other"}, "Other": {"0": "Other"}}
+{
+    "Coca-Cola":
+    {
+        "0": "Zero",
+        "1": "Original",
+        "2": "Other"
+        },
+    "Bavaria":
+    {
+        "0": "Pony Malta",
+        "1": "Other"
+        },
+    "Postobon":
+    {
+        "0": "Manzana",
+        "1": "Other"
+        },
+    "Colanta":
+    {
+        "0": "Yogurt",
+        "1": "Other"
+        },
+    "Alpina":
+    {
+        "0":"Bonyurt",
+        "1": "Other"},
+    "Pepsi":
+    {
+        "0": "Other"
+        },
+    "Nacional de chocolates":
+    {
+        "0": "Chocolatina Jet",
+        "1": "Other"
+        },
+    "Santin Noel":
+    {
+        "0": "Original",
+        "1": "Other"
+        },
+    "Detodito": 
+    {
+        "0": "Other"
+        },
+    "Doritos": 
+    {
+        "0": "Other"
+        },
+    "Gatorade": 
+    {
+        "0": "Other"
+        },
+    "Cheesetris":
+    {
+        "0": "Other"
+        },
+    "Manimoto": 
+    {
+        "0": "Other"
+        },
+    "Margarita": 
+    {
+        "0": "Other"
+        },
+    "Tosh": 
+    {
+        "0": "Other"
+        },
+    "Other":{
+        "0": "Other"
+        }
+    }
