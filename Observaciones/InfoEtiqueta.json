@@ -38,7 +38,7 @@
         "g": "Gray",
         "h": "Other color"
         },
-    "tipoEmpaque":
+    "tipo de empaque":
     {
         "0": "Bottle",
         "1": "Can",
@@ -59,7 +59,7 @@
         "4": "1500-3000",
         "5": ">3000"
         },
-    "tapaBotella": 
+    "tapa": 
     {
         "0": true,
         "1": false
@@ -73,9 +73,9 @@
         },
     "Dano": 
     {
-        "0": "Mixed",
-        "1": "Damaged",
-        "2": "Undamaged"
+        "0": "Undamaged",
+        "1": "Mixed",
+        "2": "Damaged"
         },
     "Marca": 
     {
