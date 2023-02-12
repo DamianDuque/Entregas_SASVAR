@@ -4,7 +4,7 @@ CAM_NUM = 1
 SCALE = 0.5
  
 print("Iniciando camara")
-cap = cv2.VideoCapture(3)
+cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("Cannot open camera")

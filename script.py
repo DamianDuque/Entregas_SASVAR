@@ -85,7 +85,7 @@ def mismoResiduo(caps, id_etiqueta):
 def main():
     #caps = [cv2.VideoCapture(i) for i in range(CAM_NUM) if cv2.VideoCapture(i).isOpened and i != 3]
     #print(caps)
-    caps = [0,1,3]
+    caps = [0,1,2]
     
     while True:
         print("Porfavor ingrese el id de la etiqueta del residuo a fotografiar")
