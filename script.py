@@ -21,11 +21,11 @@ def nuevoResiduo(caps, ):
         id_etiqueta = input()
 
         print("Porfavor ingrese el numero correspondiente al estado del residuo:")
-        print("1 - Intacto")
-        print("2 - Medio")
-        print("3 - Dañado")
+        print("0 - Intacto")
+        print("1 - Medio")
+        print("2 - Dañado")
 
-        dvalue = input()
+        dvalue = 1 #input()
 
         print("Ingrese x para tomar fotos o e para salir")
         ing = input()
@@ -53,11 +53,11 @@ def nuevoResiduo(caps, ):
 def mismoResiduo(caps, id_etiqueta):
     while True:
         print("Porfavor ingrese el numero correspondiente al estado del residuo:")
-        print("1 - Intacto")
-        print("2 - Medio")
-        print("3 - Dañado")
+        print("0 - Intacto")
+        print("1 - Medio")
+        print("2 - Dañado")
 
-        dvalue = input()
+        dvalue = 1 #input()
 
         print("Ingrese x para tomar fotos o e para salir")
         ing = input()
@@ -85,18 +85,18 @@ def mismoResiduo(caps, id_etiqueta):
 def main():
     #caps = [cv2.VideoCapture(i) for i in range(CAM_NUM) if cv2.VideoCapture(i).isOpened and i != 3]
     #print(caps)
-    caps = [0,1,2]
+    caps = [1,2]
     
     while True:
         print("Porfavor ingrese el id de la etiqueta del residuo a fotografiar")
         id_etiqueta = input()
 
         print("Porfavor ingrese el numero correspondiente al estado del residuo:")
-        print("1 - Intacto")
-        print("2 - Medio")
-        print("3 - Dañado")
+        print("0 - Intacto")
+        print("1 - Medio")
+        print("2 - Dañado")
 
-        dvalue = input()
+        dvalue = 1 #input()
 
         print("Ingrese x para tomar fotos o e para salir")
         ing = input()

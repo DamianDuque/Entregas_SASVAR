@@ -1,10 +1,10 @@
 import cv2
 
-CAM_NUM = 1
+CAM_NUM = 2
 SCALE = 0.5
  
 print("Iniciando camara")
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 if not cap.isOpened():
     print("Cannot open camera")

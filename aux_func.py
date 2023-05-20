@@ -13,6 +13,8 @@ if eCarpeta == False:
 
 ruta = os.path.abspath(nombre_carpeta)
 
+print(ruta)
+print(type(ruta))
 
 
 def generarId():
@@ -67,22 +69,25 @@ def tomarFotos(CAM_NUM, id, caps, id_etiqueta, dvalue):
     nombresFotos = []
     for i in caps:
 
+        os.chdir(ruta)
         cap = cv2.VideoCapture(i)
         ret, frame = cap.read()
         
         if not ret:
             print("Can't receive frame (stream end?). Exiting ...")
 
-        print(cam)
-        cv2.imwrite(os.path.join(ruta, formFoto + "_" +str(cam) + ".png") , frame)
+
+        img_name = formFoto + "_" + str(cam) + ".png"
+        print("foto tomada desde la camara: " + str(cam))
+
+        cv2.imwrite(img_name, frame)
         cap.release()
         
-        nombreFoto = os.path.join(ruta, formFoto + "_" +str(cam) + ".png")
+        nombreFoto = os.path.join(ruta, img_name)
         
         nombresFotos.append(nombreFoto)
         cam = cam + 1
 
-        time.sleep(3)
     return nombresFotos
 
 def show_cap(cap, window, scale=1, rect=True, color=(0, 0, 255)):
