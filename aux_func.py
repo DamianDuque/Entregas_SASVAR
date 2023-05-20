@@ -77,13 +77,12 @@ def tomarFotos(CAM_NUM, id, caps, id_etiqueta, dvalue):
             print("Can't receive frame (stream end?). Exiting ...")
 
 
-        img_name = formFoto + "_" + str(cam) + ".png"
         print("foto tomada desde la camara: " + str(cam))
 
-        cv2.imwrite(img_name, frame)
+        cv2.imwrite(os.path.join(ruta, formFoto + "_" + str(cam) + ".png"), frame)
         cap.release()
         
-        nombreFoto = os.path.join(ruta, img_name)
+        nombreFoto = os.path.join(ruta, formFoto + "_" + str(cam) + ".png")
         
         nombresFotos.append(nombreFoto)
         cam = cam + 1
