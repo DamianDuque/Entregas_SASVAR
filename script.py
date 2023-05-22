@@ -1,7 +1,5 @@
 import cv2
 import os
-import json
-import numpy as np
 
 import aux_func as au
 
@@ -41,9 +39,9 @@ def nuevoResiduo(caps, ):
         print(fotos)
         au.verificar(fotos, CAM_NUM, id, caps, id_etiqueta, dvalue)
 
-        print("Ingrese c si desea continuar etiquetando el mismo residuo")
+        print("Ingrese n si desea etiquetar un nuevo reisudo, enter si desea continuar con el mismo residuo")
         reuse = input()
-        if reuse != "c":
+        if reuse == "n":
             continue
 
         else:
@@ -73,9 +71,10 @@ def mismoResiduo(caps, id_etiqueta):
         print(fotos)
         au.verificar(fotos, CAM_NUM, id, caps, id_etiqueta, dvalue)
 
-        print("Ingrese c si desea continuar etiquetando el mismo residuo")
+
+        print("Ingrese n si desea etiquetar un nuevo reisudo, enter si desea continuar con el mismo residuo")
         reuse = input()
-        if reuse != "c":
+        if reuse == "n":
             nuevoResiduo(caps)
 
         else:
@@ -85,7 +84,7 @@ def mismoResiduo(caps, id_etiqueta):
 def main():
     #caps = [cv2.VideoCapture(i) for i in range(CAM_NUM) if cv2.VideoCapture(i).isOpened and i != 3]
     #print(caps)
-    caps = [1,2]
+    caps = [0,1]
     
     while True:
         print("Porfavor ingrese el id de la etiqueta del residuo a fotografiar")
@@ -112,9 +111,9 @@ def main():
         print(fotos)
         au.verificar(fotos, CAM_NUM, id, caps, id_etiqueta, dvalue)
 
-        print("Ingrese c si desea continuar etiquetando el mismo residuo")
+        print("Ingrese n si desea etiquetar un nuevo reisudo, enter si desea continuar con el mismo residuo")
         reuse = input()
-        if reuse != "c":
+        if reuse == "n":
             nuevoResiduo(caps)
 
         else:

@@ -14,7 +14,6 @@ if eCarpeta == False:
 ruta = os.path.abspath(nombre_carpeta)
 
 print(ruta)
-print(type(ruta))
 
 
 def generarId():
